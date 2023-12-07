@@ -1,0 +1,28 @@
+Instalación:
+tener python 3 instalado
+tener java y jdk instalado ultima version y compatibles, (yo tengo java 8 y jdk 21 y son compatibles)
+instalar antlr4 en cmd y en la consola del visual:
+    pip install antlr4-tools
+    pip install antlr4-python3-runtime==4.9.3
+instalar antlr4 en visual studio
+    configurar en File>Preferences>Settings>Antlr4>Format>
+    edit in settings.json
+    al final debe estar esto:
+            "antlr4.generation": {
+
+
+
+            "mode": "external",
+            "language": "Python3",
+            "listeners": true,
+            "visitors": true
+        }
+
+Ejecución:
+archivo.g4          #contiene las instrucciones del programa
+ctrl+s al archivo.g4 creará los archivos necesarios
+luego dibujo.py lo ejecutamos en visual
+y en la terminal ponemos
+python dibujar.py hello.txt
+
+al parecer en visitor se configura que hace cada cosa... seguiremos informando
